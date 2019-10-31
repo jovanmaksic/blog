@@ -4,11 +4,12 @@ import {fechUser} from '../actions';
 
 
 class UserHeader extends React.Component{
-componentDidMount(){
-    this.props.fechUser(this.props.userId);
-}
+    componentDidMount(){
+        console.log(this.props);
+        this.props.fechUser(this.props.userId);
+    }
 
-    render(){        
+    render(){
         const user = this.props.users.find((user) => user.id === this.props.userId);
             if(!user){
                 return null;

@@ -12,7 +12,7 @@ export const fechPosts = () =>{
     }
 }
 
-export const fechUser =(id) =>{
+export const fechUser = (id) =>{
     return async (dispatch) => {
         const response = await jsonPlaceholder.get(`/users/${id}`);
 
